@@ -10,7 +10,7 @@ export const errorHandler = (
   next: NextFunction
 ) => {
   console.log("🚀 ~ file: error.middleware.ts ~ line 13 ~ error", error);
-  const status = error.statusCode || error.status || 500;
+  const status = error.statusCode ?? error.status ?? 500;
 
   if (error instanceof z.ZodError) {
     return res.status(400).json({
