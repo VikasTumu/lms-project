@@ -8,7 +8,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:admin@123@172.17.0.2:5432/postgres"
+  url      = env("DATABASE_URL")
 }
 
 model Course {
