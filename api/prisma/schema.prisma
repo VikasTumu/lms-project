@@ -8,7 +8,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = postgresql://vikas:admin@123@52.91.131.155:5432/postgres
+  url      = postgresql://vikas:admin@123@lms-db.chk0geoe4u4n.us-east-2.rds.amazonaws.com/postgres
 }
 
 model Course {
